@@ -1,0 +1,68 @@
+{{ define "main" }}
+
+{{/* Simple line icons, drawn in the same style as the logo */}}
+{{ $icons := dict
+  "treat" `<path d="M2 12c3-4 8-5 12-3l4-3v12l-4-3c-4 2-9 1-12-3z"/><circle cx="7" cy="11" r=".6" fill="currentColor"/>`
+  "bed"   `<ellipse cx="12" cy="15" rx="10" ry="5"/><ellipse cx="12" cy="14" rx="6" ry="2.5"/><path d="M2 15v-2"/><path d="M22 15v-2"/>`
+}}
+
+<section class="page-band text-white py-5">
+  <div class="container">
+    <h1 class="display-6 fw-bold mb-2">{{ or .Params.titleHead .Title }}</h1>
+    {{ with .Params.lead }}<p class="lead mb-0">{{ . }}</p>{{ end }}
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section class="bg-light py-5">
+  <div class="container">
+
+    <nav class="d-flex flex-wrap gap-2 mb-5" aria-label="Shop categories">
+      {{ range site.Data.products }}
+      <a href="#{{ .category | anchorize }}" class="btn btn-sm btn-outline-brand rounded-pill">{{ .category }}</a>
+      {{ end }}
+    </nav>
+
+    {{ range site.Data.products }}
+    {{ $icon := index $icons .icon }}
+    <section id="{{ .category | anchorize }}" class="shop-category mb-5">
+      <h2 class="section-title mb-1">{{ .category }}</h2>
+      {{ with .intro }}<p class="text-muted mb-4">{{ . }}</p>{{ end }}
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+        {{ range .items }}
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm product-card">
+            <div class="product-art d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{ $icon | safeHTML }}</svg>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="h6 fw-bold mb-1">{{ .name }}</h3>
+              <p class="text-muted small mb-2">{{ .size }}</p>
+              <p class="small mb-3">{{ .note }}</p>
+              <span class="fw-bold section-title mt-auto">${{ .price }}</span>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+
+    <div class="card border-0 shadow-sm">
+      <div class="card-body p-4 d-flex flex-column flex-md-row gap-3 align-items-md-center justify-content-between">
+        <div>
+          <h2 class="h5 section-title mb-1">Not sure what they'll like?</h2>
+          <p class="text-muted small mb-0">Give us a call and we'll help you pick.</p>
+        </div>
+        {{ range site.Menus.main }}{{ with .Params.tel }}
+        <a href="{{ . | safeURL }}" class="btn btn-accent fw-bold">{{ strings.TrimPrefix "tel:" . }}</a>
+        {{ end }}{{ end }}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{{ end }}

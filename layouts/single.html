@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+{{ $heading := or .Params.titleHead .Title }}
+
+<section class="articlebanner position-relative overflow-hidden">
+  <img src="{{ .Params.image | relURL }}" alt="{{ $heading }}" class="w-100 h-100">
+  <h1 class="position-absolute top-50 start-50 translate-middle text-white text-center w-75">{{ $heading }}</h1>
+</section>
+
+<article class="container py-5 article-description">
+  {{ .Content }}
+</article>
+
+<div class="section-divider"></div>
+
+<section class="bg-light py-4">
+  <div class="container-fluid px-3 px-lg-5">
+    <h2 class="section-title mb-4">Other Articles</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+      {{ $currentPage := . }}
+      {{ range where .Site.RegularPages.Reverse "Section" "posts" }}
+        {{ if ne .Permalink $currentPage.Permalink }}
+          {{ partial "cardPosts.html" . }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

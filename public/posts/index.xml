@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on Purr &amp; Pantry</title>
+		<link>//localhost:1313/posts/</link>
+		<description>Recent content in Posts on Purr &amp; Pantry</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 22 Apr 2026 09:08:34 -0600</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Pantry Notes</title>
+				<link>//localhost:1313/posts/pantry-notes/</link>
+				<pubDate>Wed, 22 Apr 2026 09:08:34 -0600</pubDate>
+				<guid>//localhost:1313/posts/pantry-notes/</guid>
+				<description>&lt;p&gt;A well-organized cat pantry keeps dinner routines simple. Store food in its original packaging in a cool, dry spot, keep treats easy to find, and check labels and dates before serving. A dedicated scoop and a clean bowl make the everyday ritual feel special.&lt;/p&gt;&#xA;&lt;p&gt;These are friendly fictional-shop notes, not veterinary advice. Ask your veterinarian about the right food for your cat.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Cat Care Basics</title>
+				<link>//localhost:1313/posts/cat-care-basics/</link>
+				<pubDate>Wed, 22 Apr 2026 09:08:01 -0600</pubDate>
+				<guid>//localhost:1313/posts/cat-care-basics/</guid>
+				<description>&lt;p&gt;Cats love a good routine: a clean water bowl, a cozy place to snooze, a sturdy scratcher, and a few minutes of play. Small comforts help make a home feel like their own personal kingdom.&lt;/p&gt;&#xA;&lt;p&gt;Every cat is different. For questions about health, diet, or behavior, check in with a qualified veterinarian. Purr &amp;amp; Pantry is a fictional shop, and all store links are placeholders.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Playtime Picks</title>
+				<link>//localhost:1313/posts/playtime-picks/</link>
+				<pubDate>Wed, 22 Apr 2026 09:07:22 -0600</pubDate>
+				<guid>//localhost:1313/posts/playtime-picks/</guid>
+				<description>&lt;p&gt;A feather on a string, a crinkle in the corner, a ball that disappears beneath the sofa: excellent play can be wonderfully simple. Rotate a few toys to keep familiar favorites feeling new, and make time for a little chase-and-catch every day.&lt;/p&gt;&#xA;&lt;p&gt;Choose toys that suit your cat, check them for wear, and supervise play with strings or small parts. Our toy shelf is imaginary for now, but the fun is easy to picture.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>The Good Bowl</title>
+				<link>//localhost:1313/posts/the-good-bowl/</link>
+				<pubDate>Wed, 22 Apr 2026 09:05:43 -0600</pubDate>
+				<guid>//localhost:1313/posts/the-good-bowl/</guid>
+				<description>&lt;p&gt;Every cat has their own mealtime rhythm. Some arrive at the bowl the moment it lands; others prefer to inspect it from three angles first. At Purr &amp;amp; Pantry, we imagine a pantry full of everyday meals, tasty treats, and plenty of fresh water.&lt;/p&gt;&#xA;&lt;p&gt;When choosing food for a real cat, follow the guidance of your veterinarian and the feeding instructions on the package. Our shop and product links are placeholders, not product recommendations.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

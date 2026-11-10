@@ -1,0 +1,37 @@
+<header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow-sm">
+    <div class="container-fluid px-3 px-lg-5">
+      <a href="/" class="navbar-brand py-0" aria-label="Purr & Pantry home">
+        <img src="/images/photography-mahi-RnRKAFZuuNU-unsplash.png" alt="Purr & Pantry" class="nav-brand-logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav w-100 gap-md-3 align-items-md-center">
+          {{ range .Site.Menus.main }}
+            {{ if ne .Name "Home" }}
+              {{ if eq .Name "📞 Call Us" }}
+                <li class="nav-item ms-md-auto my-2 my-md-0">
+                  {{/* call us link uses the menu item's tel param instead of its URL */}}
+                  <a href="{{ .Params.tel | safeURL }}" class="btn btn-sm btn-accent fw-bold d-inline-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/>
+                    </svg>
+                    {{ trim (replace .Name "📞" "") " " }}
+                  </a>
+                </li>
+              {{ else }}
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="{{ .URL }}">{{ .Name }}</a>
+                </li>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

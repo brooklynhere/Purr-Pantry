@@ -1,0 +1,36 @@
+# Sample products for the Shop page. Prices and items are placeholders.
+# icon: treat | bed
+
+- category: "Treats"
+  icon: treat
+  intro: "Little rewards for excellent sitting."
+  items:
+    - name: "Tuna Crunchies"
+      size: "60 g pouch"
+      price: "5.49"
+      note: "The rattle of this bag summons cats from three rooms away."
+    - name: "Freeze-dried Chicken Bites"
+      size: "40 g tub"
+      price: "8.99"
+      note: "One ingredient. Zero patience required."
+    - name: "Dental Twists"
+      size: "75 g pouch"
+      price: "6.25"
+      note: "A crunchy treat that helps keep teeth tidy."
+
+- category: "Cozy naps"
+  icon: bed
+  intro: "Comfort for professional nappers."
+  items:
+    - name: "Donut Bed"
+      size: "50 cm"
+      price: "39.00"
+      note: "A plush ring for the perfect curl."
+    - name: "Sunny Window Perch"
+      size: "Suction mount"
+      price: "29.99"
+      note: "Front-row seats to the bird channel."
+    - name: "Scratcher Lounge"
+      size: "Cardboard"
+      price: "14.50"
+      note: "Scratch it, nap on it, guard it from the dog."

@@ -1,0 +1,10 @@
+<div class="col">
+  <a class="card h-100 border-0 shadow-sm text-decoration-none text-reset post-card" href="{{ .RelPermalink }}">
+    {{ with .Params.image }}
+      <img src="{{ . | relURL }}" class="card-img-top" alt="{{ $.Title }}">
+    {{ end }}
+    <div class="card-body text-center">
+      <p class="card-title fw-semibold mb-0">{{ .Title }}</p>
+    </div>
+  </a>
+</div>

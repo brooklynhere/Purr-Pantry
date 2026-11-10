@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request a Cat Care Check-in</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="/css/style.min.81d49efa50264ee4a48378493cef77f52cfdbc3f8f492ed046e4f647dce6f065.css" integrity="sha256-gdSe&#43;lAmTuSkg3hJPO939Sz9vD&#43;PSS7QRuT2R9zm8GU=">
+
+</head>
+
+<body>
+  <header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow-sm">
+    <div class="container-fluid px-3 px-lg-5">
+      <a href="/" class="navbar-brand py-0" aria-label="Purr & Pantry home">
+        <img src="/images/photography-mahi-RnRKAFZuuNU-unsplash.png" alt="Purr & Pantry" class="nav-brand-logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav w-100 gap-md-3 align-items-md-center">
+          
+            
+          
+            
+              
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="/our-story/">Our Story</a>
+                </li>
+              
+            
+          
+            
+              
+                <li class="nav-item ms-md-auto my-2 my-md-0">
+                  
+                  <a href="tel:403-555-0123" class="btn btn-sm btn-accent fw-bold d-inline-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/>
+                    </svg>
+                    Call Us
+                  </a>
+                </li>
+              
+            
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+  
+
+  <main>
+    
+
+<section class="page-band text-white py-5">
+  <div class="container">
+    <h1 class="display-6 fw-bold mb-2">Request a cat care check-in</h1>
+    <p class="lead mb-0">Tell us a little about your cat and we&#39;ll put together food, treat, and toy ideas that suit their personality.</p>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section class="bg-light py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-8">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body p-4">
+            <form class="directusform" method="POST" directusform="true" action="/thank-you/" name="Check-in">
+
+              <h2 class="h5 section-title mb-3">About you</h2>
+              <div class="row g-3 mb-4">
+                <div class="col-sm-6">
+                  <label for="checkin-name" class="form-label">Your name</label>
+                  <input type="text" class="form-control" id="checkin-name" name="Name" required>
+                </div>
+                <div class="col-sm-6">
+                  <label for="checkin-email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="checkin-email" name="Email" placeholder="you@example.com" required>
+                </div>
+                <div class="col-sm-6">
+                  <label for="checkin-phone" class="form-label">Phone <span class="text-muted small">(optional)</span></label>
+                  <input type="tel" class="form-control" id="checkin-phone" name="Phone" placeholder="403-555-0123">
+                </div>
+                <div class="col-sm-6">
+                  <label for="checkin-contact" class="form-label">Best way to reach you</label>
+                  <select class="form-select" id="checkin-contact" name="Contact Preference">
+                    <option>Email</option>
+                    <option>Phone</option>
+                  </select>
+                </div>
+              </div>
+
+              <h2 class="h5 section-title mb-3">About your cat</h2>
+              <div class="row g-3 mb-4">
+                <div class="col-sm-6">
+                  <label for="checkin-cat" class="form-label">Cat's name</label>
+                  <input type="text" class="form-control" id="checkin-cat" name="Cat Name" placeholder="Biscuit" required>
+                </div>
+                <div class="col-sm-6">
+                  <label for="checkin-age" class="form-label">Age</label>
+                  <select class="form-select" id="checkin-age" name="Cat Age">
+                    <option>Kitten (under 1 year)</option>
+                    <option selected>Adult (1–10 years)</option>
+                    <option>Senior (10+ years)</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <span class="form-label d-block">Personality</span>
+                  
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="checkin-personality-0" name="Personality" value="Couch loaf">
+                    <label class="form-check-label" for="checkin-personality-0">Couch loaf</label>
+                  </div>
+                  
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="checkin-personality-1" name="Personality" value="Zoomies champion">
+                    <label class="form-check-label" for="checkin-personality-1">Zoomies champion</label>
+                  </div>
+                  
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="checkin-personality-2" name="Personality" value="Picky eater">
+                    <label class="form-check-label" for="checkin-personality-2">Picky eater</label>
+                  </div>
+                  
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="checkin-personality-3" name="Personality" value="Treat negotiator">
+                    <label class="form-check-label" for="checkin-personality-3">Treat negotiator</label>
+                  </div>
+                  
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="checkin-personality-4" name="Personality" value="Puzzle solver">
+                    <label class="form-check-label" for="checkin-personality-4">Puzzle solver</label>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <h2 class="h5 section-title mb-3">What can we help with?</h2>
+              <div class="row g-3 mb-4">
+                <div class="col-12">
+                  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Topic" id="checkin-topic-0" value="Food and treat ideas" checked>
+                    <label class="form-check-label" for="checkin-topic-0">Food and treat ideas</label>
+                  </div>
+                  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Topic" id="checkin-topic-1" value="Toys and play" >
+                    <label class="form-check-label" for="checkin-topic-1">Toys and play</label>
+                  </div>
+                  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Topic" id="checkin-topic-2" value="Restock a favourite" >
+                    <label class="form-check-label" for="checkin-topic-2">Restock a favourite</label>
+                  </div>
+                  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Topic" id="checkin-topic-3" value="A bit of everything" >
+                    <label class="form-check-label" for="checkin-topic-3">A bit of everything</label>
+                  </div>
+                  
+                </div>
+                <div class="col-sm-6">
+                  <label for="checkin-date" class="form-label">Preferred date</label>
+                  <input type="date" class="form-control" id="checkin-date" name="Preferred Date">
+                </div>
+                <div class="col-sm-6">
+                  <label for="checkin-time" class="form-label">Preferred time</label>
+                  <select class="form-select" id="checkin-time" name="Preferred Time">
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Evening</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="checkin-notes" class="form-label">Anything else?</label>
+                  <textarea class="form-control" id="checkin-notes" name="Notes" rows="4" placeholder="Favourite flavours, toys they ignore, the box they won't leave…"></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-brand fw-bold px-4">Request check-in</button>
+              <p class="form-text mt-2 mb-0">This is a sample form. Nothing is sent yet.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <aside class="col-lg-4">
+        <div class="card border-0 shadow-sm mb-4">
+          <div class="card-body p-4">
+            <h2 class="h5 section-title mb-3">What to expect</h2>
+            <ol class="list-unstyled mb-0 d-grid gap-3">
+              
+              <li class="d-flex gap-3">
+                <span class="step-number rounded-circle d-inline-flex align-items-center justify-content-center fw-bold flex-shrink-0">1</span>
+                <div>
+                  <p class="fw-semibold mb-0">We read up on your cat</p>
+                  <p class="text-muted small mb-0">Personality, age, and what they love (or snub).</p>
+                </div>
+              </li>
+              
+              <li class="d-flex gap-3">
+                <span class="step-number rounded-circle d-inline-flex align-items-center justify-content-center fw-bold flex-shrink-0">2</span>
+                <div>
+                  <p class="fw-semibold mb-0">We reach out</p>
+                  <p class="text-muted small mb-0">Usually within a day or two, by email or phone.</p>
+                </div>
+              </li>
+              
+              <li class="d-flex gap-3">
+                <span class="step-number rounded-circle d-inline-flex align-items-center justify-content-center fw-bold flex-shrink-0">3</span>
+                <div>
+                  <p class="fw-semibold mb-0">You get a short list</p>
+                  <p class="text-muted small mb-0">Bowl, treat, and toy picks that suit them.</p>
+                </div>
+              </li>
+              
+            </ol>
+          </div>
+        </div>
+
+        <div class="card border-0 shadow-sm">
+          <div class="card-body p-4">
+            <h2 class="h5 section-title mb-2">Rather talk?</h2>
+            <p class="text-muted small mb-3">Give us a call and we'll happily chat about your cat.</p>
+            
+            <a href="tel:403-555-0123" class="btn btn-sm btn-accent fw-bold">403-555-0123</a>
+            
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <footer class="site-footer text-white">
+  <div class="container py-5">
+
+    <h2 class="mb-4">Contact Us</h2>
+
+    <form class="directusform" method="POST" directusform="true" action="/thank-you/" name="Contact">
+
+      <div class="row g-3 mb-3">
+        <div class="col-sm-6">
+          <label class="visually-hidden" for="form-control-38-0-firstname">First Name</label>
+          <input type="text" class="form-control" id="form-control-38-0-firstname" name="First Name" placeholder="First Name" required>
+        </div>
+        <div class="col-sm-6">
+          <label class="visually-hidden" for="form-control-38-0-lastname">Last Name</label>
+          <input type="text" class="form-control" id="form-control-38-0-lastname" name="Last Name" placeholder="Last Name" required>
+        </div>
+      </div>
+
+      <div class="row g-3 mb-3">
+        <div class="col-sm-6">
+          <label for="form-control-40-2" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="form-control-40-2" name="Email" placeholder="Email Address" required>
+        </div>
+        <div class="col-sm-6">
+          <label for="form-control-41-3" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="form-control-41-3" name="Phone" placeholder="Phone Number">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="form-control-39-1" class="form-label">Comment</label>
+        <textarea class="form-control" id="form-control-39-1" name="Comment" placeholder="Comment" rows="4" required></textarea>
+      </div>
+
+      <button type="submit" name="af5f83dc6027f" id="form-control-42-4" class="btn btn-accent fw-bold">Submit</button>
+
+      <div hidden id="form-feedback" class="alert alert-warning mt-3" role="alert">Error message</div>
+
+    </form>
+  </div>
+
+  <div class="footer-bar">
+    <div class="container d-flex flex-column flex-md-row gap-3 justify-content-between align-items-center text-center py-3">
+      <span>Purr & Pantry · Make their day a little more whiskery</span>
+      <a href="/" class="footer-glass-box rounded-2 px-2 py-1" aria-label="Purr & Pantry home">
+        <img src="/images/photography-mahi-RnRKAFZuuNU-unsplash.png" alt="Purr & Pantry Logo" class="footer-logo">
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  
+    
+    <script src="/js/form-submission.js"></script>
+  
+</body>
+</html>

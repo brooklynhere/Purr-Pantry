@@ -1,0 +1,78 @@
+{{ define "main" }}
+
+<section class="hero position-relative">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/hoyoun-lee-XvlDBMM4DZc-unsplash.jpg" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="/images/amos-k-ZLD-z-s5irA-unsplash.jpg" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="/images/rancy-tan-STX-GNfEA6g-unsplash.jpg" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end align-items-md-center justify-content-center p-3 pb-5 pb-md-3">
+    <div class="hero-text-box rounded-3 px-4 py-3">
+      <h2 class="hero-tagline m-0">Purr & Pantry</h2>
+      <p class="hero-subtext m-0">Good bowls. Great toys. Happier naps.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-white py-4">
+  <div class="container-fluid px-3 px-lg-5">
+    <h2 class="section-title mb-3">Made for curious cats</h2>
+
+    <div class="row g-4 align-items-start">
+      <div class="col-auto d-none d-md-block">
+        <img src="/images/notes.png" alt="" class="intro-icon">
+      </div>
+
+      <div class="col-md">
+        <p class="lead text-body">
+          Welcome to Purr & Pantry, your imaginary neighborhood stop for tasty cat food and delightfully distracting toys. From crunchy little treats to feather toys worthy of a champion pounce, we pick the fun stuff for every whiskered personality.
+        </p>
+      </div>
+
+      <div class="col-md-auto text-center pt-3 pt-md-0 ps-md-4 intro-cta">
+        <h3 class="h5 section-title mb-3">Ready for a restock?</h3>
+        <a href="/shop/" class="btn btn-brand fw-bold">Browse the pantry</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section class="bg-light py-4">
+  <div class="container-fluid px-3 px-lg-5">
+    <h2 class="section-title mb-4">Good things for cats</h2>
+
+    <ul class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3 list-unstyled px-md-5 mb-0">
+      {{ range .Site.Data.services }}
+      <li class="col d-flex align-items-center gap-2">
+        <img src="/images/checkmark.svg" alt="" class="check-icon">
+        {{ .title }}
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+
+<section class="bg-light py-4">
+  <div class="container-fluid px-3 px-lg-5">
+    <h2 class="section-title mb-4">Notes from the cat corner</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+      {{ range where .Site.RegularPages.Reverse "Section" "posts" }}
+        {{ partial "cardPosts.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

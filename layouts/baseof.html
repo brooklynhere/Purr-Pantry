@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  {{ partial "header.html" . }}
+
+  {{ block "header" . }}{{ end }}
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  <script src="{{ "js/bootstrap.bundle.min.js" | relURL }}"></script>
+  {{ with resources.Get "js/form-submission.js" }}
+    {{ $form := . | js.Build (dict "format" "iife" "target" "es2015") }}
+    <script src="{{ $form.RelPermalink }}"></script>
+  {{ end }}
+</body>
+</html>

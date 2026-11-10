@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2026-11-09T09:00:00-07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/shop/</loc>
+    <lastmod>2026-11-09T09:00:00-07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/our-story/</loc>
+    <lastmod>2026-04-22T09:09:11-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/thank-you/</loc>
+    <lastmod>2026-04-22T09:09:11-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/pantry-notes/</loc>
+    <lastmod>2026-04-22T09:08:34-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2026-04-22T09:08:34-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/cat-care-basics/</loc>
+    <lastmod>2026-04-22T09:08:01-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/playtime-picks/</loc>
+    <lastmod>2026-04-22T09:07:22-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/the-good-bowl/</loc>
+    <lastmod>2026-04-22T09:05:43-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+  </url>
+</urlset>

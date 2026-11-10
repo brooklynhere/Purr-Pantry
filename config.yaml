@@ -1,0 +1,16 @@
+disableKinds:
+- sitemap
+- taxonomy
+- term
+
+outputs:
+  home:
+  - html
+
+caches:
+  getresource:
+    maxAge: 0
+
+params:
+  productionSiteBaseURL: "/"
+  stagingSiteBaseURL: "/"
